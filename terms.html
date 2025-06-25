@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | EcoHatch - Sustainable Gardening Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #047857;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+            --light: #ecfdf5;
+            --dark: #064e3b;
+            --text: #1f2937;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #f8fafc;
+            overflow-x: hidden;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .footer {
+            background: var(--dark);
+            color: white;
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+        }
+        
+        .highlight-text {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+        
+        .highlight-text:after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background-color: rgba(245, 158, 11, 0.3);
+            z-index: -1;
+            transform: skew(-15deg);
+        }
+        
+        .terms-point {
+            margin-bottom: 2rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--secondary);
+        }
+        
+        .terms-section {
+            margin-bottom: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <img src="p1.png" alt="EcoHatch Logo" class="h-10 w-10 mr-2 rounded-full object-cover">
+                            <span class="font-semibold text-gray-800 text-lg">EcoHatch</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300 nav-link">Home</a>
+                    <a href="privacy.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300 nav-link">Privacy</a>
+                    <a href="terms.html" class="py-4 px-2 text-green-800 font-semibold hover:text-green-600 transition duration-300 nav-link" aria-current="page">Terms</a>
+                    <a href="cookies.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300 nav-link">Cookies</a>
+                    <a href="contact.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300 nav-link">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12 max-w-5xl">
+        <div class="text-center mb-12">
+            <h1 class="text-3xl md:text-5xl font-bold text-green-800 mb-4">Terms of Service</h1>
+            <p class="text-gray-600 max-w-3xl mx-auto">Last Updated: <span class="font-semibold">June 15, 2023</span></p>
+        </div>
+        
+        <article class="prose max-w-none">
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">1. Acceptance of Terms</h2>
+                <p>By accessing and using the EcoHatch website and services, you agree to comply with and be bound by these Terms of Service. These terms govern your use of our website, mobile applications, products, and services. If you do not agree with any part of these terms, you must discontinue use of our services immediately. Your continued use following any changes constitutes acceptance of those modifications.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">2. Description of Services</h2>
+                <p>EcoHatch provides sustainable gardening solutions, including consultation services, educational programs, product recommendations, and business development support related to eco-friendly gardening practices. Our services are subject to change without notice and may be modified or discontinued at our sole discretion. We do not guarantee that our services will be available at all times or free from errors.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">3. User Responsibilities</h2>
+                <p>Users are responsible for providing accurate information when registering for services and must keep their account credentials confidential. You agree to use our services lawfully and ethically, without engaging in activities that may harm our systems or other users. You must not use our services to distribute unlawful, harmful, or offensive content, or to engage in fraudulent activities.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">4. Account Registration</h2>
+                <p>To access certain features, you may need to register an account by providing current, complete, and accurate information. You are solely responsible for maintaining the confidentiality of your account and password and for all activities that occur under your account. We reserve the right to refuse service, terminate accounts, or remove/edit content in our sole discretion.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">5. Payment Terms</h2>
+                <p>For paid services, you agree to pay all fees specified in your order. All fees are non-refundable except as required by law or as otherwise expressly stated in these terms. We may change our fees at any time by posting new prices on our site. Late payments may be subject to interest charges at the maximum rate permitted by law.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">6. Intellectual Property Rights</h2>
+                <p>All content on our website, including text, graphics, logos, and software, is the property of EcoHatch or its content suppliers and protected by copyright laws. You may not modify, publish, transmit, or create derivative works from our content without express written permission. Limited use for personal, non-commercial purposes is permitted with proper attribution.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">7. User Content</h2>
+                <p>By submitting content to our platform (comments, photos, reviews), you grant EcoHatch a non-exclusive, royalty-free license to use, reproduce, modify, and distribute that content. You represent that you own or have permission to use all content you submit. We reserve the right to remove any user-generated content that violates these terms.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">8. Prohibited Activities</h2>
+                <p>Users are prohibited from: reverse engineering our systems, using automated tools to scrape data, spamming other users, transmitting viruses or malicious code, attempting unauthorized access to systems, engaging in fraudulent activities, or violating any applicable laws. Violations may result in termination of your access without notice.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">9. Termination of Services</h2>
+                <p>We may terminate or suspend your access to our services immediately, without prior notice, for any breach of these terms. All provisions which by their nature should survive termination shall remain in effect, including ownership provisions, warranty disclaimers, indemnity, and limitations of liability. You may terminate your account at any time by contacting customer service.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">10. Third-Party Links</h2>
+                <p>Our services may contain links to third-party websites not operated by us. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites. You acknowledge sole responsibility for any access or use of third-party websites, products, or services through links on our platform.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">11. Disclaimer of Warranties</h2>
+                <p>Our services are provided "as is" without warranty of any kind, either express or implied. EcoHatch disclaims all warranties, including merchantability, fitness for particular purpose, and non-infringement. We do not warrant that the services will be uninterrupted, error-free, or completely secure. Gardening advice is provided for informational purposes only.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">12. Limitation of Liability</h2>
+                <p>To the maximum extent permitted by law, EcoHatch shall not be liable for any indirect, incidental, special, consequential or punitive damages resulting from your use of our services. Our total liability for any claim shall not exceed the amount you paid us for the services in the twelve months prior to the claim arising. Some jurisdictions do not allow these limitations.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">13. Indemnification</h2>
+                <p>You agree to defend, indemnify, and hold harmless EcoHatch and its affiliates from any claims, damages, liabilities, and expenses arising from your use of our services, your violation of these terms, or your violation of any third-party rights. This includes reasonable attorneys' fees and costs. We reserve the right to assume exclusive defense of any matter subject to indemnification.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">14. Governing Law</h2>
+                <p>These terms shall be governed by and construed in accordance with the laws of New York, without regard to its conflict of law provisions. Any disputes shall be subject to the exclusive jurisdiction of the courts located in New York County. The United Nations Convention on Contracts for the International Sale of Goods does not apply to these terms.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">15. Dispute Resolution</h2>
+                <p>Before filing any claim, you agree to attempt informal resolution by contacting our customer service. Any unresolved disputes must be submitted to confidential binding arbitration in New York except for claims seeking injunctive relief. Arbitration shall proceed under AAA rules with one arbitrator. Both parties waive the right to a jury trial or class action.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">16. Changes to Terms</h2>
+                <p>We reserve the right to modify these terms at any time by posting updated versions on our website. Material changes will be communicated through email or prominent website notices. Your continued use after changes signifies acceptance. Please review these terms periodically. The "Last Updated" date indicates when changes were implemented.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">17. Newsletter Subscription</h2>
+                <p>By subscribing to our newsletter, you consent to receive periodic emails about our products, services, and gardening tips. Each email includes an unsubscribe link, and you may opt out at any time. We do not sell or share our mailing lists with third parties except as necessary to provide the service (e.g., email service providers).</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">18. Mobile Services</h2>
+                <p>If you access our services through mobile devices, standard data and messaging rates may apply. You are responsible for all carrier charges. Our mobile services may not be available in all areas or through all carriers. Location-based services require your geographic permission and may be disabled in your device settings.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">19. International Use</h2>
+                <p>We make no representation that our services are appropriate or available for use in locations outside the United States. Accessing our services from territories where content is illegal is prohibited. Users who access our services from outside the U.S. do so on their own initiative and are responsible for compliance with local laws.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">20. Age Requirement</h2>
+                <p>Our services are intended for users aged 18 and older. Individuals under 18 may use our services only with the involvement and permission of a parent or legal guardian. By using our services, you represent that you meet the age requirement or have proper parental consent. We do not knowingly collect personal information from children under 16.</p>
+            </section>
+            
+            <!-- Additional terms points (21-40) with same structure -->
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">21. Community Guidelines</h2>
+                <p>For user forums and community features, we require respectful behavior and constructive discussions. Prohibited conduct includes harassment, hate speech, spamming, and commercial solicitation. We reserve the right to remove any content and suspend accounts that violate community standards without prior notice. Repeated violations may lead to permanent bans.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">22. Partner Services</h2>
+                <p>Some services may be provided by third-party partners under separate terms and conditions. When using partner services, you may be subject to additional agreements. We are not responsible for partner services but will assist with customer service inquiries. Partner services may have different privacy practices which we will disclose before sign-up.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">23. Service Availability</h2>
+                <p>While we strive to maintain continuous availability of our services, we do not guarantee uninterrupted access. Services may be temporarily unavailable during scheduled maintenance or due to unforeseen circumstances beyond our control. We are not liable for any damages resulting from service interruptions, though we will make reasonable efforts to restore functionality promptly.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">24. Feedback Submission</h2>
+                <p>When you provide feedback, suggestions, or ideas about our services, you agree that we may use and implement them without compensation to you. All submitted feedback becomes our property, and we may modify it or use it for any business purpose without limitation. You waive any moral rights in such submissions.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">25. Force Majeure</h2>
+                <p>We are not liable for any failure to perform due to causes beyond our reasonable control, including natural disasters, war, terrorism, labor disputes, utility failures, internet outages, or governmental actions. These events shall constitute force majeure excusing performance for their duration. We will make reasonable efforts to notify users of any service impacts.</p>
+            </section>
+            
+            <section class="terms-section">
+ <h2 class="text-2xl font-bold text-green-700 mb-6">26. Waiver</h2>
+                <p>The failure of EcoHatch to enforce any right or provision of these terms shall not be deemed a waiver of such right or provision. Any waiver of any provision of these terms will be effective only if in writing and signed by an authorized representative of EcoHatch. No waiver of any breach shall be deemed a waiver of any subsequent breach.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">27. Severability</h2>
+                <p>If any provision of these terms is found to be invalid or unenforceable by a court of competent jurisdiction, the remaining provisions shall remain in full force and effect. The invalid or unenforceable provision shall be deemed modified to the minimum extent necessary to make it valid and enforceable.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">28. Assignment</h2>
+                <p>You may not assign or transfer these terms or any rights or obligations hereunder without our prior written consent. We may assign or transfer these terms at any time without restriction. These terms shall bind and inure to the benefit of the parties and their respective successors and permitted assigns.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">29. Entire Agreement</h2>
+                <p>These terms constitute the entire agreement between you and EcoHatch regarding your use of our services and supersede all prior agreements and understandings, whether written or oral, relating to the subject matter herein. Any modifications to these terms must be made in writing and signed by both parties.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">30. Contact Information</h2>
+                <p>If you have any questions about these Terms of Service, please contact us at EcoHatch, 70 Washington Square South, New York, NY 10012, United States. Phone: (123) 456-7890. We are here to assist you with any inquiries or concerns regarding our services.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">31. User Conduct</h2>
+                <p>Users are expected to conduct themselves in a manner that is respectful and constructive. Any form of harassment, bullying, or discrimination will not be tolerated. We reserve the right to take appropriate action against users who violate these standards, including account suspension or termination.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">32. Privacy Policy</h2>
+                <p>Your use of our services is also governed by our Privacy Policy, which outlines how we collect, use, and protect your personal information. By using our services, you consent to the practices described in our Privacy Policy. We encourage you to review it to understand our data handling practices.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">33. Marketing Communications</h2>
+                <p>By using our services, you agree to receive marketing communications from EcoHatch. You can opt-out of receiving these communications at any time by following the unsubscribe instructions included in each email. We respect your preferences and will honor your requests promptly.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">34. User Reviews and Ratings</h2>
+                <p>Users may submit reviews and ratings for products and services. By submitting a review, you grant us the right to use, modify, and publish your review in any format. Reviews must be honest and reflect your genuine experience. We reserve the right to remove any reviews that violate our guidelines.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">35. Third-Party Advertising</h2>
+                <p>We may display advertisements from third parties on our website. We do not endorse or guarantee the products or services advertised. Any interactions with advertisers are solely between you and the advertiser. We are not responsible for any claims or damages arising from such interactions.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">36. User-Generated Content</h2>
+                <p>Users may create and share content on our platform. By doing so, you represent that you have the necessary rights to share that content and that it does not infringe on any third-party rights. We are not responsible for user-generated content and do not endorse any opinions expressed therein.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">37. Social Media Policy</h2>
+                <p>When engaging with us on social media, you agree to follow our community guidelines. We encourage positive interactions and constructive feedback. We reserve the right to block or report users who engage in negative behavior or violate our guidelines on social media platforms.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">38. Environmental Responsibility</h2>
+                <p>EcoHatch is committed to promoting sustainable practices. We encourage users to adopt eco-friendly gardening methods and to be mindful of their environmental impact. We may provide resources and tips to help users make sustainable choices in their gardening practices.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">39. Feedback and Suggestions</h2>
+                <p>We welcome feedback and suggestions from our users. If you have ideas for improving our services or website, please share them with us. Your input is valuable and helps us enhance the user experience. We may implement suggestions at our discretion.</p>
+            </section>
+            
+            <section class="terms-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">40. Conclusion</h2>
+                <p>These Terms of Service outline the rules and guidelines for using EcoHatch's services. By using our services, you agree to comply with these terms. We appreciate your support and look forward to providing you with exceptional gardening solutions. If you have any questions, please do not hesitate to contact us.</p>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer Section with Address and Phone Number -->
+    <footer class="footer py-8 bg-dark">
+        <div class="container mx-auto text-center">
+            <p class="text-sm text-white">© 2023 EcoHatch. All rights reserved.</p>
+            <p class="text-sm text-white">Address: 70 Washington Square South, New York, NY 10012, United States</p>
+            <p class="text-sm text-white">Phone: (123) 456-7890</p>
+            <p class="text-sm text-white">Disclaimer: The information provided on this website is for general informational purposes only and should not be considered professional advice.</p>
+            <p class="text-sm text-white">Customer Satisfaction: We strive to provide the best service possible. Your feedback is important to us!</p>
+            <p class="text-sm text-white">Follow us on social media for the latest updates and tips on sustainable gardening!</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | EcoHatch - Sustainable Gardening Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #047857;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+            --light: #ecfdf5;
+            --dark: #064e3b;
+            --text: #1f2937;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #f8fafc;
+            overflow-x: hidden;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .footer {
+            background: var(--dark);
+            color: white;
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+        }
+        
+        .highlight-text {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+        
+        .highlight-text:after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background-color: rgba(245, 158, 11, 0.3);
+            z-index: -1;
+            transform: skew(-15deg);
+        }
+        
+        .contact-point {
+            margin-bottom: 2rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--secondary);
+        }
+        
+        .contact-section {
+            margin-bottom: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .contact-form {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            padding: 2.5rem;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            transition: border-color 0.2s ease;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(4, 120, 87, 0.1);
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text);
+        }
+        
+        .submit-btn {
+            background-color: var(--primary);
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s ease;
+        }
+        
+        .submit-btn:hover {
+            background-color: var(--dark);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <img src="p1.png" alt="EcoHatch Logo" class="h-10 w-10 mr-2 rounded-full object-cover">
+                            <span class="font-semibold text-gray-800 text-lg">EcoHatch</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300 nav-link">Home</a>
+                    <a href="privacy.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300 nav-link">Privacy</a>
+                    <a href="terms.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300 nav-link">Terms</a>
+                    <a href="cookies.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300 nav-link">Cookies</a>
+                    <a href="contact.html" class="py-4 px-2 text-green-800 font-semibold hover:text-green-600 transition duration-300 nav-link" aria-current="page">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12 max-w-5xl">
+        <div class="text-center mb-12">
+            <h1 class="text-3xl md:text-5xl font-bold text-green-800 mb-4">Contact EcoHatch</h1>
+            <p class="text-gray-600 max-w-3xl mx-auto">We're here to help with all your sustainable gardening questions and needs. Reach out to our team of experts today.</p>
+        </div>
+        
+        <!-- Contact Form Section -->
+        <section class="contact-form mb-16">
+            <h2 class="text-2xl font-bold text-green-700 mb-6">Send Us a Message</h2>
+            <form action="#" method="POST" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="first-name" class="form-label">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required class="form-input">
+                    </div>
+                    <div>
+                        <label for="last-name" class="form-label">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required class="form-input">
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" name="email" required class="form-input">
+                </div>
+                
+                <div>
+                    <label for="phone" class="form-label">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" name="phone" class="form-input">
+                </div>
+                
+                <div>
+                    <label for="subject" class="form-label">Subject</label>
+                    <select id="subject" name="subject" required class="form-input">
+                        <option value="">Select a subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="services">Services Information</option>
+                        <option value="consultation">Consultation Request</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="support">Technical Support</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required class="form-input"></textarea>
+                </div>
+                
+                <div class="flex items-center">
+                    <input type="checkbox" id="newsletter" name="newsletter" class="h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300 rounded">
+                    <label for="newsletter" class="ml-2 block text-sm text-gray-700">Subscribe to our newsletter for gardening tips and updates</label>
+                </div>
+                
+                <div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </div>
+            </form>
+        </section>
+        
+        <!-- Contact Information Section -->
+        <article class="prose max-w-none">
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">1. Our Contact Information</h2>
+                <p>EcoHatch is available through multiple channels to accommodate your preferred method of communication. Our main office is located at 70 Washington Square South, New York, NY 10012, United States. For immediate assistance, call us at (123) 456-7890 during business hours (Monday-Friday, 9am-5pm EST). Email inquiries can be sent to info@ecohatch.com, and we typically respond within 24-48 hours.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">2. Business Hours</h2>
+                <p>Our standard business hours are Monday through Friday from 9:00 AM to 5:00 PM Eastern Standard Time. We are closed on major U.S. holidays. For urgent matters outside business hours, please leave a voicemail or send an email, and we will respond as soon as possible when we reopen. Special appointment times may be available for consultations by prior arrangement.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">3. Emergency Contact Protocol</h2>
+                <p>While we don't provide emergency gardening services, for urgent matters related to existing service contracts, please call our main number and press "2" to reach our on-call team member. True emergencies involving safety hazards should be directed to local authorities. Our team can provide guidance for time-sensitive gardening issues during normal business hours.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">4. Response Time Expectations</h2>
+                <p>We strive to respond to all inquiries within one business day. Complex questions or those requiring research may take 2-3 business days for a complete response. During peak seasons (spring and fall), response times may extend slightly. You'll receive an automated acknowledgment when your message is received, followed by a personal response from our team.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">5. Preferred Contact Methods</h2>
+                <p>For general inquiries, email is often the most efficient method. Service-related questions may be best handled by phone. In-person consultations require scheduling in advance through our online booking system or by phone. Social media messages are monitored but may have slower response times than our official communication channels.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">6. International Contact Information</h2>
+                <p>International clients can reach us at +1 (123) 456-7890. Please note the time difference when calling. For non-English inquiries, we have team members fluent in Spanish and French who can assist. Translation services are available for other languages with advance notice. International calls may incur charges from your service provider.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">7. Mailing Address</h2>
+                <p>All written correspondence and official documents should be sent to our headquarters at EcoHatch, 70 Washington Square South, New York, NY 10012, United States. Please include attention to the appropriate department when possible. We recommend using trackable mail services for important documents and allow 5-7 business days for processing received mail.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">8. Visiting Our Office</h2>
+                <p>Our New York office welcomes visitors by appointment only. When planning your visit, please schedule at least 48 hours in advance. Our facility has wheelchair access and is conveniently located near public transportation. Visitor parking is limited, so we encourage using public transit when possible. Photo ID may be required for building access.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">9. Department Contacts</h2>
+                <p>For specific inquiries, you may contact departments directly: Customer Service (ext. 101), Sales (ext. 102), Consulting (ext. 103), Billing (ext. 104), and Media Relations (ext. 105). Our automated phone system can direct your call appropriately, or you can email departmentname@ecohatch.com (replace departmentname with the actual department).</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">10. Social Media Presence</h2>
+                <p>We maintain active profiles on Facebook, Instagram, Twitter, and LinkedIn. While these platforms are great for general information and community engagement, they are not monitored 24/7 for service issues. For official communications, please use our primary contact methods. Social media messages may take longer to receive responses than emails or phone calls.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">11. Contact Form Usage</h2>
+                <p>Our website contact form is the preferred method for initial inquiries as it routes your message to the appropriate team. The form includes required fields to ensure we have necessary information to assist you effectively. Form submissions receive the same priority as direct emails and are typically answered within the same timeframe.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">12. Customer Service Standards</h2>
+                <p>We're committed to providing courteous, knowledgeable, and prompt service. Our representatives are trained to listen carefully, ask clarifying questions, and either resolve your inquiry or route it to the appropriate specialist. All interactions are documented in our system to ensure continuity if follow-up is needed. Customer satisfaction surveys may follow certain interactions.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">13. Technical Support Contacts</h2>
+                <p>For website technical issues or digital product support, email techsupport@ecohatch.com or call (123) 456-7890 ext. 106. Please provide detailed information about your issue, including screenshots if possible, and any error messages received. Our tech team is available Monday-Friday 8am-6pm EST with reduced hours on weekends.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">14. Media Inquiries</h2>
+                <p>Members of the press should contact our PR team at media@ecohatch.com or (123) 456-7890 ext. 105. Please include your name, media outlet, deadline, and the focus of your story. We can provide expert commentary, company information, and arrange interviews with our leadership team. Non-media requests should use general contact channels.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">15. Partnership Proposals</h2>
+                <p>Organizations seeking partnerships or collaborations should email partnerships@ecohatch.com with a detailed proposal. Include information about your organization, proposed collaboration benefits, and any relevant supporting materials. Our partnership committee reviews submissions monthly and responds to all serious inquiries within 30 days.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">16. Career Opportunities</h2>
+                <p>Job applicants should visit our Careers page to view current openings and submit applications through our online portal. Resume submissions via email are not accepted unless specifically requested by our HR team. For general questions about working at EcoHatch, email careers@ecohatch.com. Recruiters must follow specific vendor protocols.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">17. Vendor Inquiries</h2>
+                <p>Companies interested in becoming approved vendors should submit information through our vendor portal (accessible from our website). Include your company overview, product/service details, certifications, and references. Our procurement team reviews submissions quarterly. Unsolicited sales calls or visits are not accepted without prior appointment.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class ="text-2xl font-bold text-green-700 mb-6">18. Customer Feedback</h2>
+                <p>We value your feedback and encourage customers to share their experiences with our services. Feedback can be submitted through our website, social media, or directly via email. We review all feedback to improve our offerings and customer experience. Constructive criticism is welcomed, and we aim to address any concerns promptly.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">19. Gardening Workshops</h2>
+                <p>EcoHatch offers various gardening workshops throughout the year. For inquiries about upcoming workshops, please contact us via email or phone. We provide information on topics covered, schedules, and registration details. Workshops are designed for all skill levels, and we encourage community participation.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">20. Sustainability Initiatives</h2>
+                <p>We are committed to sustainability and encourage our customers to participate in eco-friendly practices. For more information on our sustainability initiatives or to get involved, please reach out to us. We provide resources and support for individuals and organizations looking to make a positive environmental impact.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">21. Community Engagement</h2>
+                <p>EcoHatch actively engages with the community through events, sponsorships, and partnerships. If you have a community event or initiative that aligns with our mission, please contact us. We are always looking for ways to support local efforts and promote sustainable gardening practices.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">22. Gardening Resources</h2>
+                <p>We provide a variety of gardening resources on our website, including articles, videos, and guides. For specific inquiries about gardening techniques or plant care, feel free to reach out. Our team of experts is here to assist you with any gardening-related questions you may have.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">23. Eco-Friendly Products</h2>
+                <p>EcoHatch offers a range of eco-friendly gardening products. For inquiries about product availability, pricing, or recommendations, please contact our sales team. We are dedicated to providing sustainable options that support your gardening needs while being kind to the environment.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">24. Gardening Tips and Advice</h2>
+                <p>Our team is happy to provide gardening tips and advice tailored to your specific needs. Whether you're a beginner or an experienced gardener, we can help you with plant selection, pest management, and sustainable practices. Reach out to us for personalized guidance.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">25. Seasonal Gardening Advice</h2>
+                <p>As seasons change, so do gardening needs. We offer seasonal advice to help you prepare your garden for the upcoming months. For tailored seasonal tips, contact us or check our website for updated resources. We aim to help you maximize your gardening success year-round.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">26. Pest Management Solutions</h2>
+                <p>Pest management is crucial for a healthy garden. We provide advice on organic and sustainable pest control methods. If you're facing pest issues, reach out for assistance. Our experts can recommend effective strategies to protect your plants while minimizing environmental impact.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">27. Soil Health and Fertility</h2>
+                <p>Healthy soil is the foundation of a thriving garden. We offer guidance on soil testing, amendments, and fertility management. For personalized soil health advice, contact us. We can help you understand your soil's needs and recommend appropriate solutions for optimal growth.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">28. Plant Selection Guidance</h2>
+                <p>Choosing the right plants for your garden can be overwhelming. Our team can assist you in selecting plants that thrive in your local climate and soil conditions. For personalized plant recommendations, reach out to us with your gardening goals and preferences.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">29. Landscape Design Services</h2>
+                <p>EcoHatch offers landscape design services to help you create beautiful and functional outdoor spaces. For inquiries about our design process, pricing, and portfolio, please contact us. We work closely with clients to bring their vision to life while incorporating sustainable practices.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">30. Gardening Workshops and Events</h2>
+                <p>We host various workshops and events throughout the year to educate and engage the community. For information on upcoming events, registration, and topics covered, please contact us. We encourage participation from all gardening enthusiasts, regardless of skill level.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">31. Volunteer Opportunities</h2>
+                <p>EcoHatch welcomes volunteers to assist with community gardening projects and events. If you're interested in volunteering, please reach out for more information on available opportunities and how you can contribute to our mission of promoting sustainable gardening.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">32. Gardening Community Support</h2>
+                <p>We believe in the power of community support for gardeners. Join our online forums and social media groups to connect with fellow gardening enthusiasts. For more information on how to get involved, contact us. We encourage sharing experiences and knowledge among our community members.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">33. EcoHatch Blog</h2>
+                <p>Our blog features articles on various gardening topics, tips, and success stories. For inquiries about guest blogging or contributing to our content, please reach out. We welcome diverse perspectives and experiences to enrich our community's knowledge base.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">34. Gardening Resources and Tools</h2>
+                <p>We provide a range of resources and tools to assist gardeners in their journey. For inquiries about specific tools, resources, or recommendations, please contact us. Our goal is to equip you with the knowledge and tools necessary for successful gardening.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">35. Customer Loyalty Program</h2>
+                <p>EcoHatch offers a customer loyalty program to reward our dedicated clients. For details on how to enroll and the benefits available, please contact us. We appreciate your loyalty and strive to provide exceptional value to our customers.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">36. Gardening Challenges and Solutions</h2>
+                <p>Every gardener faces challenges, and we're here to help. If you're experiencing specific gardening issues, reach out for tailored solutions. Our experts can provide advice on overcoming common gardening challenges and achieving your goals.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">37. Seasonal Gardening Tips</h2>
+                <p>As the seasons change, so do gardening needs. We provide seasonal tips to help you prepare your garden for the upcoming months. For tailored seasonal advice, contact us or check our website for updated resources. We aim to help you maximize your gardening success year-round.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">38. Gardening for Wildlife</h2>
+                <p>Creating a garden that supports local wildlife is essential for biodiversity. We offer guidance on how to design your garden to attract beneficial insects, birds, and other wildlife. For more information on wildlife-friendly gardening practices, please contact us.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">39. Eco-Friendly Pest Control</h2>
+                <p>We advocate for eco-friendly pest control methods that minimize harm to beneficial insects and the environment. For advice on organic pest management strategies, reach out to our team. We can help you develop a pest control plan that aligns with your gardening philosophy.</p>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">40. Conclusion</h2>
+                <p>We appreciate your interest in EcoHatch and look forward to assisting you with your gardening needs. Whether you have questions, feedback, or require support, our team is here to help. Please don't hesitate to reach out through any of our contact methods. Together, we can cultivate a greener future!</p>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer Section with Address and Phone Number -->
+    <footer class="footer py-8 bg-dark">
+        <div class="container mx-auto text-center">
+            <p class="text-sm text-white">© 2023 EcoHatch. All rights reserved.</p>
+            <p class="text-sm text-white">Address: 70 Washington Square South, New York, NY 10012, United States</p>
+            <p class="text-sm text-white">Phone: (123) 456-7890</p>
+            <p class="text-sm text-white">Disclaimer: The information provided on this website is for general informational purposes only and should not be considered professional advice.</p>
+            <p class="text-sm text-white">Customer Satisfaction: We strive to provide the best service possible. Your feedback is important to us!</p>
+            <p class="text-sm text-white">Follow us on social media for the latest updates and tips on sustainable gardening!</p>
+        </div>
+    </footer>
+</body>
+</html>
